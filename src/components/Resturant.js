@@ -3,6 +3,8 @@ import "./style.css";
 import Menu from "./menuApi.js";
 import MenuCard from "./MenuCard";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 
 const uniqueList = [
   ...new Set(
@@ -36,6 +38,7 @@ console.log(setMenuList)
     <>
       <Navbar filterItem={filterItem} menuList={menuList} />
       <MenuCard menuData={menuData} />
+      <Footer/>
     </>
   );
 };
